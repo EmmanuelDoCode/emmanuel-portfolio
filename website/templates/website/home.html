@@ -7,6 +7,34 @@
 
     <!--this css codes-->
 <style>
+    @media(max-width: 768px){
+        body{padding: 20px;}
+
+        h1{font-size: 32px;}
+
+        h2{font-size: 22px;}
+
+        p{font-size: 16px;}
+
+        nav{padding: 10px;}
+
+        nav a{display: inline-block;
+            margin: 5px;
+        font-size: 14px;}
+
+        .project-card{width: 90%;
+                    padding: 20px;}
+
+        .btn{display: block;
+            margin: 10px auto;
+            width: 80%;}
+            
+        .badge{margin: 5px;
+            font-size: 14px;}
+
+    }
+
+
         html{
             scroll-behavior: smooth;
         }
@@ -55,7 +83,7 @@
             }
 
     nav{
-        position:fixed;
+        position:sticky;
         top:0;
         left: 0;
         width:100%;
@@ -63,6 +91,8 @@
         padding:15px;
         z-index: 1000;
             }
+
+    section{padding: 80px;}
 
     nav a{
         color:#00ffcc;
