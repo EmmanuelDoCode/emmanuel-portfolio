@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel | Backend Developer</title>
+
+    <!--this css codes-->
+<style>
+        html{
+            scroll-behavior: smooth;
+        }
+
+
+
+     body{
+         background-color: #0f0f0f;
+         color: white;
+         font-family: Arial,  sans-serif;
+         text-align: center;
+          padding: 50px;
+            }
+            
+    h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+        }
+
+    h2{
+        color: #00ffcc;
+        margin-bottom: 20px;
+        }
+
+    p{
+                max-width: 600px;
+                margin: auto;
+                font-size: 18px;
+                color:  #cccccc;
+            }
+
+    .btn{
+                margin-top: 20px;
+                display: inline-block;
+                padding: 10px, 20px;
+                background: #00ffcc;
+                color: black;
+                text-decoration: none;
+                border-radius: 7px;
+                font-weight: bold;
+            }
+
+    .btn:hover {
+                background: #ffffff;
+                transform: scale(1.05); 
+            }
+
+    nav{
+        position:fixed;
+        top:0;
+        left: 0;
+        width:100%;
+        background-color:#111;
+        padding:15px;
+        z-index: 1000;
+            }
+
+    nav a{
+        color:#00ffcc;
+        text-decoration:none;
+        margin:0 15px;
+        font-weight: bold;
+        }
+    nav a:hover{
+        color: white;
+    }
+
+    #typing::after{
+        content:"✍️";
+        animation:blink 1s infinite;
+    }
+
+    @keyframes blink{50%{
+        opacity: 0;
+    }}
+
+
+
+    .project-card{
+
+        border:1px solid #333;
+
+        border-radius:15px;
+
+        padding:30px;
+
+        max-width:700px;
+
+        margin:auto;
+
+        transition:0.3s;
+    }
+
+    .project-card:hover{
+
+        transform:translateY(-5px);
+
+        box-shadow:0 0 20px rgba(0,255,204,0.2);
+    }
+
+    .badge{
+        display: inline-block;
+        margin: 8px;
+        padding: 10px 15px;
+        border-radius: 25px;
+        background: #1a1a1a;
+        color:#00ffcc;
+        border: 1px solid #00ffcc;
+    }
+
+
+
+
+            footer{
+                margin-top: 100px;
+                padding: 20px;
+                color: #777;
+            }
+
+</style>
+
+
+
+</head>
+
+
+
+
+<body>
+    <nav>
+
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+    
+   <section style="padding: 100px 20px;">
+        <h1>Hi👋, I'm Emmanuel</h1>
+
+        <h2 id="typing"></h2>
+
+        <p>
+            I build backend systems, APIs, automation solutions,
+            and AI-powered applications using Python and Django.
+        </p>
+
+        <a class="btn"
+           href="https://github.com/EmmanuelDoCode"
+           target="_blank">
+            View GitHub
+        </a>
+    </section>
+
+    <hr>
+
+    <section id="about" style="padding: 50px;">
+        <h2>About Me</h2>
+
+        <p>
+            I'm a Python and Django developer passionate about
+            backend systems, automation, and AI products.
+            I enjoy solving real-world problems through software
+            and continuously improving my engineering skills.
+        </p>
+    </section>
+
+    <hr>
+
+    <!---project block code--->
+    <section id="projects" style="padding: 50px;">
+        <h2>Featured Project</h2>
+
+        <div class="project-card">
+
+            <h3>WhatsApp Taxi Booking System Backend</h3>
+
+            <p>
+                A Django REST API backend that handles ride requests,
+                driver assignment, ride acceptance, rejection,
+                automatic reassignment, and ride completion.
+            </p>
+
+            
+
+            <br>
+            <p><strong>What I Learned:</strong></p>
+                API Development with Django REST Framework, 
+                Driver Dispatch Workflow Design, 
+                Webhook Integration, 
+                Error Handling and Debugging, 
+                Git and Github Version Control and Backend System Architecture.
+
+            <p>
+                <strong>Tech Stack:</strong>
+                Python, Django, DRF, SQLite, Git
+            </p>
+            
+            
+            <div style="margin: 20px 0;">
+                <p>Ride Lifecycle Management</p>
+                <p>5+ API Endpoint</p>
+                <p>Auto Driver Reassignment</p>
+                <p>Webhook Integration</p>
+                <p>Error Handling & Validation</p>
+            </div>
+
+
+            <div style="margin-top: 20px;">
+
+                <a class="btn" href="#projects">View Projects</a>
+
+                    <a class="btn"
+               href="https://github.com/EmmanuelDoCode"
+               target="_blank">GitHub</a>
+            </div>
+
+        </div>
+    </section>
+
+    <hr>
+
+
+    <!---skill block code-->
+    <section id="skills" style="padding:50px;">
+        <h2>Skills</h2>
+
+        <div style="margin-top: 20px;">
+           <span class="badge">Python</span> 
+           <span class="badge">Django</span> 
+           <span class="badge">DRF</span>  
+           <span class="badge">Git</span>  
+           <span class="badge">GitHub</span>  
+           <span class="badge">SQLite</span>  
+           <span class="badge">REST APIs</span>  
+           <span class="badge">Webhook</span>  
+           <span class="badge">System</span>  
+           <span class="badge">Debugging</span>  
+            
+        </div>
+    </section>
+
+    <section style="padding: 50px;">
+        <h2>Upcoming Projects</h2>
+        <p>1. Veloryen WhatsApp Catalog Bot</p>
+        <p>2.Veloryen E-Commerce Demo</p>
+        <p>3. Inventory Management System</p>
+    </section>
+
+    <hr>
+
+    <section id="contact" style="padding:50px;">
+        <h2>Contact</h2>
+
+        <p>Interested in working together or discussing a project?</p>  
+          
+          <a class="btn" href="https://github.com/EmmanuelDoCode"
+               target="_blank">GitHub</a>
+        
+    </section>
+
+<footer>
+        <p>
+            ©️ 2026 Emmanuel Adeyemo.
+            Built with Django.
+        </p>
+    </footer>
+
+    
+
+<!--this js codes-->
+    <script>
+        const text = [
+            "Backend Developer",
+            "Python Developer",
+            "AI Builder",
+            "Automation Engineer"
+        ];
+
+        let wordIndex = 0;
+        let charIndex = 0;
+        let currentWord = "";
+        let isDeleting = false;
+
+        function type() {
+
+            const typingElement = document.getElementById("typing");
+
+            currentWord = text[wordIndex];
+
+            if (!isDeleting) {
+                typingElement.textContent =
+                    currentWord.substring(0, charIndex + 1);
+
+                charIndex++;
+
+                if (charIndex === currentWord.length) {
+                    isDeleting = true;
+
+                    setTimeout(type, 1500);
+                    return;
+                }
+            } else {
+
+                typingElement.textContent =
+                    currentWord.substring(0, charIndex - 1);
+
+                charIndex--;
+
+                if (charIndex === 0) {
+                    isDeleting = false;
+
+                    wordIndex++;
+
+                    if (wordIndex === text.length) {
+                        wordIndex = 0;
+                    }
+                }
+            }
+
+            setTimeout(type, isDeleting ? 50 : 100);
+        }
+
+        type();
+    </script>
+    
+</body>
+</html>
