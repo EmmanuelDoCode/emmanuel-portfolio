@@ -1,0 +1,13 @@
+__pyycache__/
+*.__pyycache__
+veenv/
+.env
+.env.*
+
+db.sqlite3
+
+media/
+staticfiles/
+
+.vscode/
+.idea
